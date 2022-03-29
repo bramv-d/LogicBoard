@@ -17,6 +17,10 @@ int firstRow[8] = {A0, 0, A1, 0, A2, 0, A3, 0}; //pin in, in value ,if pin, if v
 void setup() {
   // put your setup code here to run once:
   Serial.begin(9600);
+  // put your setup code here,dwadweawdawda to run once:
+  // bram stinkt
+  // hmm
+  // jij ook
 }
 
 //prototypes
