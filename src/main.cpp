@@ -1,5 +1,4 @@
-#include <Arduino.h>
-
+#include "main.h"
 
 /*
 
@@ -30,6 +29,8 @@ void output(int row[]);
 
 void loop() {
   // put your main code here, to run repeatedly:
+  Serial.println(logicPot(0));
+  // updateRowValues(firstRow);
 
   updateRowValues(firstRow);
 
@@ -53,3 +54,14 @@ void updateRowValues(int row[]){
   row[5] = analogRead(row[4]);
   row[7] = analogRead(row[6]);
 }
+
+
+
+
+
+/*
+void readSomething(byte pin){
+  int buttonValue = analogRead(pin);  //Read in the button value
+  Serial.println(buttonValue);
+}
+*/
