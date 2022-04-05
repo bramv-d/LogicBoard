@@ -1,10 +1,4 @@
 #include "logicPot.h"
-enum logicOperators {
-    equals,
-    notEquals,
-    higher,
-    lower
-};
 
 int logicPot(byte analogPin){
   int buttonValue = analogRead(analogPin);

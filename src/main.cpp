@@ -13,6 +13,7 @@
 
 
 int firstRow[8] = {A0, 0, A1, 0, A2, 0, 6, 0}; //pin in, in value ,if pin, if value, pin compare, compare value , pin out, out value
+int potValues[8];
 
 void setup() {
   // put your setup code here to run once:
@@ -29,18 +30,12 @@ void output(int row[]);
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Serial.println(logicPot(0));
+  Serial.println(logicPot(0) == equals);
   // updateRowValues(firstRow);
 
   //updateRowValues(firstRow);
 
-  //for(int i = 0; i < 8; i++)
-  //{
-  //  Serial.println(firstRow[i]);
-  //}
-  //delay(2000);
-  //output(firstRow);
-
+  output(firstRow);
 }
 
 
@@ -54,14 +49,3 @@ void updateRowValues(int row[]){
   row[5] = analogRead(row[4]);
   row[7] = analogRead(row[6]);
 }
-
-
-
-
-
-/*
-void readSomething(byte pin){
-  int buttonValue = analogRead(pin);  //Read in the button value
-  Serial.println(buttonValue);
-}
-*/
