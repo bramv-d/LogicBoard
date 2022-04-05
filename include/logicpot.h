@@ -7,4 +7,4 @@ enum logicOperators {
     lower
 };
 
-int logicPot(byte analogPin);
+int logicPot(int buttonValue);

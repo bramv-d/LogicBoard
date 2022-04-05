@@ -1,7 +1,6 @@
 #include "logicPot.h"
 
-int logicPot(byte analogPin){
-  int buttonValue = analogRead(analogPin);
+int logicPot(int buttonValue){
   int dividerVal = 1023 / 4;
 
   if (buttonValue>=0 && buttonValue<=dividerVal){
