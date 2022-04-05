@@ -32,14 +32,14 @@ void loop() {
   Serial.println(logicPot(0));
   // updateRowValues(firstRow);
 
-  updateRowValues(firstRow);
+  //updateRowValues(firstRow);
 
   //for(int i = 0; i < 8; i++)
   //{
   //  Serial.println(firstRow[i]);
   //}
   //delay(2000);
-  output(firstRow);
+  //output(firstRow);
 
 }
 
