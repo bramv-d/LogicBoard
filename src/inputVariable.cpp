@@ -23,16 +23,16 @@ int InputVariable::valToLogic(int value){
   int dividerVal = 1023 / 4;
 
   if (value>=0 && value<=dividerVal){
-    return equals;
+    return lower;
   }
   else if (value>=dividerVal && value<=dividerVal *2){
     return notEquals;
   }
   else if (value>=dividerVal*2 && value<=dividerVal *3){
-    return higher;
+    return equals;
   }
   else if (value>=dividerVal*3 && value<=dividerVal *4){
-    return lower;
+    return higher;
   }
   else{
     return lower;
